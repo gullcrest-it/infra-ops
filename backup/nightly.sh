@@ -1,5 +1,5 @@
 #!/bin/bash
-# nightly off-site backup, cron: 30 2 * * * /opt/infra-ops/backup/nightly.sh
+# nightly off-site backup, cron: 30 2 * * * /opt/infra-ops/run.sh backup/nightly.sh
 set -e
 BUCKET=gullcrest-client-backups
 for d in /srv/backups/*/; do
